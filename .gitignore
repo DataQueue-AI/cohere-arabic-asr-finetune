@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+ahmed/
+
+# model weights / caches - too large for git, download from HF instead
+models/**/*.safetensors
+models/**/*.bin
+models/**/*.pt
+models/**/*.pth
+models/**/.cache/
+
+# dataset-specific launch scripts (see example.sh for the template)
+launch_cohere_arabic_15kbatches_1278silence_10kcs_15crtvai_ABBatches_ArabBankCallsBatches-gcpasrannotate-kejue.sh
+launch_cohere_arabic_15kbatches_1278silence_10kcs_15crtvai_ABBatches_ArabBankCallsBatches-gcpasrannotate.sh
+launch_cohere_arabic_15kbatches_1278silence_10kcs_15crtvai_ABBatches_ArabBankCallsBatches_emirates-dialect-speech_speed_aug_1.1xFew_kejue-common-voice_no_single_word_kejue.sh
+launch_cohere_arabic_dialectal-v2_15kbatches_1278silence_10kcs_15crtvai_ABBatches_ArabBankCallsBatches_emirates-dialect-speech_speed_aug_1.1xFew_kejue-common-voice_no_single_word_kejue.sh
+
+# never commit credentials
+*.pem
+google.json
+*service-account*.json
+*-key.json
